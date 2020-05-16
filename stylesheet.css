@@ -8,6 +8,7 @@ body {
 
 body {
     background-color: black;
+    background: linear-gradient(to bottom, #a8e063, rgb(255, 236, 185), #A1FFCE, #0ED2F7);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,6 +27,7 @@ body {
     border-radius: 110px;
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.1);
 }
 
 .status-bar {
@@ -92,7 +94,7 @@ body {
 }
 
 .app-icon-image {
-    transition: transform .2s;
+    transition: transform .15s;
 }
 
 .app-icon-image:hover {

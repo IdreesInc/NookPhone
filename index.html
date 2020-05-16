@@ -18,45 +18,75 @@
                     <img class="status-icon-image" src="images/cellular_status.png">
                 </div>
                 <div class="time">
-                    10 : 27 AM
+                    Loading...
                 </div>
                 <div class="status-icon">
                     <img class="status-icon-image" src="images/location_status.png">
                 </div>
             </div>
             <div class="title">
-                Nook Miles+
+                NookPhone
             </div>
             <div class="app-grid">
-                <div class="app-icon">
+                <div id="camera" class="app-icon">
                     <img class="app-icon-image" src="images/camera_icon.png">
                 </div>
-                <div class="app-icon">
+                <div id="nook-miles" class="app-icon">
                     <img class="app-icon-image" src="images/nook_miles_icon.png">
                 </div>
-                <div class="app-icon">
+                <div id="critterpedia" class="app-icon">
                     <img class="app-icon-image" src="images/critterpedia_icon.png">
                 </div>
-                <div class="app-icon">
+                <div id="diy" class="app-icon">
                     <img class="app-icon-image" src="images/diy_icon.png">
                 </div>
-                <div class="app-icon">
-                    <img class="app-icon-image" src="images/terraform_icon.png">
-                </div>
-                <div class="app-icon">
+                <div id="design" class="app-icon">
                     <img class="app-icon-image" src="images/design_icon.png">
                 </div>
-                <div class="app-icon">
+                <div id="map" class="app-icon">
                     <img class="app-icon-image" src="images/map_icon.png">
                 </div>
-                <div class="app-icon">
+                <div id="chat" class="app-icon">
                     <img class="app-icon-image" src="images/chat_icon.png">
                 </div>
-                <div class="app-icon">
+                <div id="passport" class="app-icon">
                     <img class="app-icon-image" src="images/passport_icon.png">
+                </div>
+                <div id="best-friends" class="app-icon">
+                    <img class="app-icon-image" src="images/best_friends_icon.png">
                 </div>
             </div>
         </div>
     </div>
+    <script src="libraries/jquery-3.5.1.min.js"></script>
+    <script>
+        let names = {
+            "camera": "Camera",
+            "nook-miles": "Nook Miles+",
+            "critterpedia": "Critterpedia",
+            "diy": "DIY Recipes",
+            "design": "Custom Designs",
+            "map": "Map",
+            "chat": "Chat Log",
+            "passport": "Passport",
+            "best-friends": "Best Friends List"
+        };
+
+        $(".app-icon").on({
+            mouseenter: function () {
+                $(".title").text(names[$(this).attr("id")]);
+            },
+            mouseleave: function () {
+                $(".title").text("NookPhone");
+            }
+        });
+
+        function updateTime() {
+            let date = new Date();
+            $('.time').text(date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }));
+        }
+        updateTime();
+        setInterval(updateTime, 500);
+    </script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Varela+Round&display=swap');
+
 html,
 body {
 	height: 100%;
@@ -9,4 +11,61 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.phone-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.phone {
+    width: 400px;
+    height: 600px;
+    background: #fdf8e3;
+    border-radius: 110px;
+    display: flex;
+    flex-direction: column;
+}
+
+.status-bar {
+    /* border-color: grey; */
+    /* border-style: solid; */
+    height: 30px;
+    margin-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Varela Round", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #E0DACA;
+}
+
+.status-icon {
+    width: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cell-status, .location-status {
+    height: 22px;
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+.time {
+}
+
+.location-status {
+    align-self: flex-end;
 }

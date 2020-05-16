@@ -29,8 +29,6 @@ body {
 }
 
 .status-bar {
-    /* border-color: grey; */
-    /* border-style: solid; */
     height: 30px;
     margin-top: 30px;
     padding-left: 60px;
@@ -52,7 +50,7 @@ body {
     justify-content: center;
 }
 
-.cell-status, .location-status {
+.status-icon-image {
     height: 22px;
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
     image-rendering: -moz-crisp-edges;          /* Firefox                        */
@@ -63,9 +61,41 @@ body {
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 
-.time {
+.title {
+    text-align: center;
+	color: #807256;
+    font-family: "Varela Round", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
 }
 
-.location-status {
-    align-self: flex-end;
+.app-grid {
+    height: 340px;
+    margin-top: 25px;
+    margin-left: 45px;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background: red; */
+
+}
+
+.app-icon {
+    width: 98px;
+    height: 98px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background: grey; */
+}
+
+.app-icon-image {
+    transition: transform .2s;
+}
+
+.app-icon-image:hover {
+    transform: scale(1.15);
+    /* cursor: pointer; */
 }

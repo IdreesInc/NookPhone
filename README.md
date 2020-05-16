@@ -2,6 +2,7 @@
 A remake of the NookPhone UI from Animal Crossing New Horizons
 
 ![Screenshot](images/screenshots/screenshot_1.png)
+[![](images/screenshots/screenshot_1.png)](http://htmlpreview.github.io/?https://github.com/IdreesInc/NookPhone/blob/master/index.html)
 
 ## What is it?
 This is a simple remake of the NookPhone home screen UI written in HTML/CSS/JavaScript. It is just a design mockup and **does not** function like the NookPhone in any fashion, as in the app icons are just there for show and clicking them will not enter any new context.

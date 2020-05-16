@@ -1,7 +1,6 @@
 # NookPhone
 A remake of the NookPhone UI from Animal Crossing New Horizons
 
-![Screenshot](images/screenshots/screenshot_1.png)
 [![](images/screenshots/screenshot_1.png)](http://htmlpreview.github.io/?https://github.com/IdreesInc/NookPhone/blob/master/index.html)
 
 ## What is it?
